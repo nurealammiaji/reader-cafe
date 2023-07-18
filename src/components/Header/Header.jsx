@@ -5,7 +5,7 @@ const Header = () => {
         <div>
             <nav className='nav-bar'>
                 <div className='nav-logo'>
-                    <a href="#">Reader Cafe</a>
+                    <a href="#">Reader Café</a>
                 </div>
                 <div className='nav-user'>
                     <img src="https://avatars.githubusercontent.com/u/8621487?v=4" alt="" />
