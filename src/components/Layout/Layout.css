@@ -1,0 +1,12 @@
+.layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.blog-area {
+    background-color: antiquewhite;
+}
+
+.blog-sidebar {
+    background-color: brown;
+}
