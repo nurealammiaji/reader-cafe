@@ -1,0 +1,30 @@
+.blog {
+    width: 845px;
+    height: 821px;
+    border: 2px solid gray;
+}
+
+.blog img {
+    width: 845px;
+    height: 450px;
+}
+
+.blog-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-author-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.author-image img {
+    width: 80px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
