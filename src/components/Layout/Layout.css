@@ -1,12 +1,15 @@
 .layout {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-}
-
-.blog-area {
-    background-color: antiquewhite;
+    grid-template-columns: 845px 411px;
+    gap: 24px;
 }
 
 .blog-sidebar {
-    background-color: brown;
+    background-color: lightgoldenrodyellow;
+    padding: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }

@@ -2,12 +2,22 @@
     width: 845px;
     height: 821px;
     border: 2px solid gray;
-    margin: 10px auto;
+    margin: 0px 10px 40px 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .blog img {
     width: 845px;
     height: 450px;
+    border-radius: 10px 0px;
+    -webkit-border-radius: 10px 0px;
+    -moz-border-radius: 10px 0px;
+    -ms-border-radius: 10px 0px;
+    -o-border-radius: 10px 0px;
 }
 
 .blog-details {

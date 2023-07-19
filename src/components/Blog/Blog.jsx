@@ -27,7 +27,12 @@ const Blog = (props) => {
                         </div>
                     </div>
                 </div>
+                <br />
                 <h2>{title}</h2>
+                <br />
+                <p>#beginners #programming</p>
+                <br />
+                <button>Mark as Read</button>
             </div>
         </div>
     );
