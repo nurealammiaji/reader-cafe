@@ -13,9 +13,10 @@
 .blog-details {
     display: flex;
     justify-content: space-between;
+    margin: 10px;
 }
 
-.blog-author-details {
+.author-details {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
