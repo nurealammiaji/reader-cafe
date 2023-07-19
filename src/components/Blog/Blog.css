@@ -23,6 +23,7 @@
 }
 
 .author-image img {
+    margin-right: 10px;
     width: 80px;
     height: 80px;
     border-radius: 100px;
@@ -30,4 +31,15 @@
     -moz-border-radius: 100px;
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
+}
+
+.reading-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bookmark-btn button {
+    background-color: transparent;
+    border: none;
 }
