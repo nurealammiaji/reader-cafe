@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import './Layout.css';
 import Blog from '../Blog/Blog';
 import Bookmark from '../Bookmark/Bookmark';
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 const Layout = () => {
 
@@ -20,24 +22,19 @@ const Layout = () => {
         setReadTime(totalReadingTime);
     }
 
-    // let totalPosts = [];
-    // const allPosts = (posts) => {
-    //     let newTotalPosts = [...totalPosts, posts];
-    //     totalPosts = newTotalPosts;
-    //     console.log(totalPosts);
-    // }
-
     const allPosts = (bookmarks) => {
         let newBookmarks = [...totalBookmarks, bookmarks];
         setTotalBookmarks(newBookmarks);
         console.log(newBookmarks);
     }
 
+    const toastOn = () => toast("Bookmark already added", { autoClose: 3000 });
+
     return (
         <div className='layout'>
             <div className='blog-area'>
                 {
-                    blogs.map(blog => <Blog key={blog.id} blog={blog} markAsRead={markAsRead} allPosts={allPosts}></Blog>)
+                    blogs.map(blog => <Blog key={blog.id} blog={blog} markAsRead={markAsRead} allPosts={allPosts} toastOn={toastOn}></Blog>)
                 }
             </div>
             <div className='blog-sidebar'>
@@ -47,7 +44,7 @@ const Layout = () => {
                 <div className='bookmarks'>
                     <h3>Bookmarked Blogs: {totalBookmarks.length} </h3>
                     {
-                        totalBookmarks.map(bookmark => <Bookmark bookmark={bookmark}></Bookmark>)
+                        totalBookmarks.map(bookmark => <Bookmark key={bookmark.id} bookmark={bookmark}></Bookmark>)
                     }
                 </div>
             </div>
