@@ -14,7 +14,7 @@ const Blog = (props) => {
                             <img src={author_image} alt="" />
                         </div>
                         <div className='author-info'>
-                            <h4>{author}</h4>
+                            <h3>{author}</h3>
                             <p>{publish_date}</p>
                         </div>
                     </div>
@@ -30,7 +30,7 @@ const Blog = (props) => {
                 <h1>{title}</h1>
                 <p>#beginners #programming</p>
                 <br />
-                <button>Mark as Read</button>
+                <button className='read-btn'>Mark as Read</button>
             </div>
         </div>
     );

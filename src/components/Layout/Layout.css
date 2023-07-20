@@ -6,11 +6,35 @@
 }
 
 .blog-sidebar {
-    background-color: lightgray;
+    display: grid;
+    grid-template-rows: 80px 1352px;
+    gap: 24px;
+}
+
+.reading-time {
+    padding: 10px;
+    text-align: center;
+    color: #6047EC;
+    font-weight: 700;
+    font-size: larger;
+    border: 2px solid #6047EC;
+    box-shadow: 1px 5px 1px lightgray;
+    background-color: rgba(17, 17, 17, 0.05);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.bookmarks {
     padding: 30px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    border: 2px solid lightgray;
+    box-shadow: 1px 5px 1px lightgray;
+    background-color: rgba(17, 17, 17, 0.05);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }

@@ -20,6 +20,12 @@ const Layout = () => {
                 }
             </div>
             <div className='blog-sidebar'>
+                <div className='reading-time'>
+                    <p>Reading Time</p>
+                </div>
+                <div className='bookmarks'>
+                    <p>Bookmarks</p>
+                </div>
             </div>
         </div>
     );
