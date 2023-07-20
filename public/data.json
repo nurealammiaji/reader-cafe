@@ -5,7 +5,7 @@
       "author_image": "https://avatars.githubusercontent.com/u/8621487?v=4",
       "image": "https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=906&q=80",
       "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-      "read_time": "5 Min Read",
+      "read_time": 5,
       "publish_date": "Mar 14 (4 Days ago)"
     },
     {
@@ -14,7 +14,7 @@
       "author_image": "https://avatars.githubusercontent.com/u/8621487?v=4",
       "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80",
       "title": "qui est esse",
-      "read_time": "10 Min Read",
+      "read_time": 10,
       "publish_date": "Mar 14 (4 Days ago)"
     },
     {
@@ -23,7 +23,7 @@
       "author_image": "https://avatars.githubusercontent.com/u/8621487?v=4",
       "image": "https://images.unsplash.com/photo-1542903660-eedba2cda473?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
       "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
-      "read_time": "15 Min Read",
+      "read_time": 15,
       "publish_date": "Mar 14 (4 Days ago)"
     },
     {
@@ -32,7 +32,7 @@
       "author_image": "https://avatars.githubusercontent.com/u/8621487?v=4",
       "image": "https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=725&q=80",
       "title": "eum et est occaecati",
-      "read_time": "8 Min Read",
+      "read_time": 8,
       "publish_date": "Mar 14 (4 Days ago)"
     }
 ]

@@ -5,6 +5,7 @@ import Blog from '../Blog/Blog';
 const Layout = () => {
 
     const [blogs, setBlogs] = useState([]);
+    const [readTime, setReadTime] = useState(0);
 
     useEffect(() => {
         fetch('data.json')
@@ -12,19 +13,26 @@ const Layout = () => {
         .then(data => setBlogs(data));
     }, []);
 
+    const markAsRead = (readingTime) => {
+        console.log(readingTime);
+        let newReadingTime = readingTime + readTime;
+        setReadTime(newReadingTime);
+        console.log(readTime);
+    }
+
     return (
         <div className='layout'>
             <div className='blog-area'>
                 {
-                    blogs.map(blog => <Blog key={blog.id} blog={blog}></Blog>)
+                    blogs.map(blog => <Blog key={blog.id} blog={blog} markAsRead={markAsRead}></Blog>)
                 }
             </div>
             <div className='blog-sidebar'>
                 <div className='reading-time'>
-                    <p>Reading Time</p>
+                    <h3>Spent time on read: {readTime} min</h3>
                 </div>
                 <div className='bookmarks'>
-                    <p>Bookmarks</p>
+                    <h3>Bookmarked Blogs: </h3>
                 </div>
             </div>
         </div>

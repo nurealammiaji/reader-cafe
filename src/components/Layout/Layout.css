@@ -12,11 +12,9 @@
 }
 
 .reading-time {
-    padding: 10px;
+    padding: 5px 10px;
     text-align: center;
     color: #6047EC;
-    font-weight: 700;
-    font-size: larger;
     border: 2px solid #6047EC;
     box-shadow: 1px 5px 1px lightgray;
     background-color: rgba(17, 17, 17, 0.05);
