@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './Layout.css';
 import Blog from '../Blog/Blog';
+import Bookmark from '../Bookmark/Bookmark';
 
 const Layout = () => {
 
@@ -30,9 +31,6 @@ const Layout = () => {
         let newBookmarks = [...totalBookmarks, bookmarks];
         setTotalBookmarks(newBookmarks);
         console.log(newBookmarks);
-        for (const bookmark of newBookmarks) {
-            console.log(bookmark);
-        }
     }
 
     return (
@@ -48,6 +46,9 @@ const Layout = () => {
                 </div>
                 <div className='bookmarks'>
                     <h3>Bookmarked Blogs: {totalBookmarks.length} </h3>
+                    {
+                        totalBookmarks.map(bookmark => <Bookmark bookmark={bookmark}></Bookmark>)
+                    }
                 </div>
             </div>
         </div>
