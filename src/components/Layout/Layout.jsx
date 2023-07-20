@@ -31,24 +31,27 @@ const Layout = () => {
     const toastOn = () => toast("Bookmark already added", { autoClose: 3000 });
 
     return (
-        <div className='layout'>
-            <div className='blog-area'>
-                {
-                    blogs.map(blog => <Blog key={blog.id} blog={blog} markAsRead={markAsRead} allPosts={allPosts} toastOn={toastOn}></Blog>)
-                }
-            </div>
-            <div className='blog-sidebar'>
-                <div className='reading-time'>
-                    <h3>Spent time on read: {readTime} min</h3>
-                </div>
-                <div className='bookmarks'>
-                    <h3>Bookmarked Blogs: {totalBookmarks.length} </h3>
+        <>
+            <ToastContainer position='top-center' autoClose={3000} />
+            <div className='layout'>
+                <div className='blog-area'>
                     {
-                        totalBookmarks.map(bookmark => <Bookmark key={bookmark.id} bookmark={bookmark}></Bookmark>)
+                        blogs.map(blog => <Blog key={blog.id} blog={blog} markAsRead={markAsRead} allPosts={allPosts} toastOn={toastOn}></Blog>)
                     }
                 </div>
+                <div className='blog-sidebar'>
+                    <div className='reading-time'>
+                        <h3>Spent time on read: {readTime} min</h3>
+                    </div>
+                    <div className='bookmarks'>
+                        <h3>Bookmarked Blogs: {totalBookmarks.length} </h3>
+                        {
+                            totalBookmarks.map(bookmark => <Bookmark key={bookmark.id} bookmark={bookmark}></Bookmark>)
+                        }
+                    </div>
+                </div>
             </div>
-        </div>
+        </>
     );
 };
 
