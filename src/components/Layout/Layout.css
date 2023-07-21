@@ -36,3 +36,9 @@
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
 }
+
+@media only screen and (max-width: 600px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+}
