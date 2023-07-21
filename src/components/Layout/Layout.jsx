@@ -25,7 +25,10 @@ const Layout = () => {
     const allPosts = (bookmarks) => {
         let newBookmarks = [...totalBookmarks, bookmarks];
         setTotalBookmarks(newBookmarks);
-        console.log(newBookmarks);
+        // console.log(newBookmarks);
+        for (const bookmark of bookmarks) {
+            console.log(bookmark);
+        }
     }
 
     const toastOn = () => toast("Bookmark already added", { autoClose: 3000 });

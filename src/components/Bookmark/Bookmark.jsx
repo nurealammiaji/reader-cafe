@@ -3,7 +3,6 @@ import './Bookmark.css';
 const Bookmark = (props) => {
 
     const {title} = props.bookmark;
-    console.log(title);
 
     return (
         <div>
