@@ -8,7 +8,7 @@ const Header = () => {
                     <a href="#">Reader Café</a>
                 </div>
                 <div className='nav-user'>
-                    <img src="https://avatars.githubusercontent.com/u/8621487?v=4" alt="" />
+                    <a href="#"><img src="https://avatars.githubusercontent.com/u/8621487?v=4" alt="" /></a>
                 </div>
             </nav>
         </div>

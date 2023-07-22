@@ -9,7 +9,7 @@ const Layout = () => {
 
     const [blogs, setBlogs] = useState([]);
     const [readTime, setReadTime] = useState(0);
-    let [totalBookmarks, setTotalBookmarks] = useState([]);
+    const [totalBookmarks, setTotalBookmarks] = useState([]);
 
     useEffect(() => {
         fetch('data.json')
@@ -25,11 +25,8 @@ const Layout = () => {
     const allPosts = (bookmarks) => {
         let newBookmarks = [...totalBookmarks, bookmarks];
         setTotalBookmarks(newBookmarks);
-        // console.log(newBookmarks);
-        for (const bookmark of bookmarks) {
-            console.log(bookmark);
-        }
     }
+
 
     const toastOn = () => toast("Bookmark already added", { autoClose: 3000 });
 

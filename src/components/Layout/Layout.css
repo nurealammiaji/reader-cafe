@@ -41,4 +41,8 @@
     .layout {
         grid-template-columns: 1fr;
     }
+
+    .blog-sidebar {
+        grid-template-rows: 80px auto;
+    }
 }

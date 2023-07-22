@@ -2,7 +2,8 @@ import './Bookmark.css';
 
 const Bookmark = (props) => {
 
-    const {title} = props.bookmark;
+    const bookmark = props.bookmark;
+    const {title} = bookmark;
 
     return (
         <div>
