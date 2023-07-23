@@ -6,7 +6,6 @@ const Blog = (props) => {
 
     const markAsRead = props.markAsRead;
     const allBookmarks = props.allBookmarks;
-    // const toastOn = props.toastOn;
 
     return (
         <div>
@@ -35,7 +34,6 @@ const Blog = (props) => {
                 <p>#beginners #programming</p>
                 <br />
                 <button onClick={()=>markAsRead(read_time)} className='read-btn'>Mark as Read</button>
-                {/* <button onClick={toastOn}>Toast</button> */}
             </div>
         </div>
     );

@@ -23,8 +23,14 @@ const Layout = () => {
     }
 
     const allBookmarks = (bookmarks) => {
-        let bookmarked = [...displayBookmarks, bookmarks];
-        setDisplayBookmarks(bookmarked);
+        let newBookmarks = [...displayBookmarks, bookmarks];
+        const existingBookmark = displayBookmarks.find(bookmark => bookmark.id === bookmarks.id);
+        if (existingBookmark) {
+            toastOn();
+        }
+        else {
+            setDisplayBookmarks(newBookmarks);
+        }
     }
 
     const toastOn = () => toast("Bookmark already added", { autoClose: 3000 });
