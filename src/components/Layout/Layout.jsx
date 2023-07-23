@@ -9,7 +9,7 @@ const Layout = () => {
 
     const [blogs, setBlogs] = useState([]);
     const [readTime, setReadTime] = useState(0);
-    const [totalBookmarks, setTotalBookmarks] = useState([]);
+    const [displayBookmarks, setDisplayBookmarks] = useState([]);
 
     useEffect(() => {
         fetch('data.json')
@@ -22,11 +22,10 @@ const Layout = () => {
         setReadTime(totalReadingTime);
     }
 
-    const allPosts = (bookmarks) => {
-        let newBookmarks = [...totalBookmarks, bookmarks];
-        setTotalBookmarks(newBookmarks);
+    const allBookmarks = (bookmarks) => {
+        let bookmarked = [...displayBookmarks, bookmarks];
+        setDisplayBookmarks(bookmarked);
     }
-
 
     const toastOn = () => toast("Bookmark already added", { autoClose: 3000 });
 
@@ -36,7 +35,7 @@ const Layout = () => {
             <div className='layout'>
                 <div className='blog-area'>
                     {
-                        blogs.map(blog => <Blog key={blog.id} blog={blog} markAsRead={markAsRead} allPosts={allPosts} toastOn={toastOn}></Blog>)
+                        blogs.map(blog => <Blog key={blog.id} blog={blog} markAsRead={markAsRead} allBookmarks={allBookmarks} toastOn={toastOn}></Blog>)
                     }
                 </div>
                 <div className='blog-sidebar'>
@@ -44,9 +43,9 @@ const Layout = () => {
                         <h3>Spent time on read: {readTime} min</h3>
                     </div>
                     <div className='bookmarks'>
-                        <h3>Bookmarked Blogs: {totalBookmarks.length} </h3>
+                        <h3>Bookmarked Blogs: {displayBookmarks.length} </h3>
                         {
-                            totalBookmarks.map(bookmark => <Bookmark key={bookmark.id} bookmark={bookmark}></Bookmark>)
+                            displayBookmarks.map(bookmark => <Bookmark key={bookmark.id} bookmark={bookmark}></Bookmark>)
                         }
                     </div>
                 </div>
