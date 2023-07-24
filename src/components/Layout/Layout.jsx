@@ -23,8 +23,14 @@ const Layout = () => {
     }
 
     const allBookmarks = (bookmarks) => {
-        let bookmarked = [...displayBookmarks, bookmarks];
-        setDisplayBookmarks(bookmarked);
+        let newBookmarks = [...displayBookmarks, bookmarks];
+        const existingBookmarks = displayBookmarks.find(bookmark => bookmark.id === bookmarks.id);
+        if (existingBookmarks) {
+            toastOn();
+        }
+        else {
+            setDisplayBookmarks(newBookmarks);
+        }
     }
 
     const toastOn = () => toast("Bookmark already added", { autoClose: 3000 });
@@ -35,7 +41,7 @@ const Layout = () => {
             <div className='layout'>
                 <div className='blog-area'>
                     {
-                        blogs.map(blog => <Blog key={blog.id} blog={blog} markAsRead={markAsRead} allBookmarks={allBookmarks} toastOn={toastOn}></Blog>)
+                        blogs.map(blog => <Blog key={blog.id} blog={blog} markAsRead={markAsRead} allBookmarks={allBookmarks}></Blog>)
                     }
                 </div>
                 <div className='blog-sidebar'>
